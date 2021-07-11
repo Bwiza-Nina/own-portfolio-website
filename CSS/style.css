@@ -168,7 +168,7 @@
         color: hsl(250, 69%, 21%);
     }
     .nav-close:hover{
-        color: hsl(250, 57%, 53x%);
+        color: hsl(250, 57%, 53%);
     }
     @media only screen and (max-width: 768px){
         .nav-menu{
