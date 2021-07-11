@@ -170,6 +170,9 @@
     .nav-close:hover{
         color: hsl(250, 57%, 53%);
     }
+    .show-menu{
+        bottom: 0;
+    }
     @media only screen and (max-width: 768px){
         .nav-menu{
             position: fixed;
