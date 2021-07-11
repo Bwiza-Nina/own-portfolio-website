@@ -360,6 +360,17 @@
     .skills-mongo, .skills-mysql, .skills-ai{
         width: 70%;
     }
+    .skills-close .skills-list{
+        height: 0;
+        overflow: hidden;
+    }
+    .skills-open .skills-list{
+        height: max-content;
+        margin-bottom: 2.5rem;
+    }
+    .skills-open .skills-arrow{
+        transform: rotate(-180deg);
+    }
     @media only screen and (max-width: 768px){
         .nav-menu{
             position: fixed;

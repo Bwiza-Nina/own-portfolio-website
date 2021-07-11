@@ -20,4 +20,20 @@ const navMenu = document.getElementById('nav-menu'),
           // on each link we click remove the show-menu class //
           navMenu.classList.remove('show-menu');
       }
-      navLink.forEach(n => n.addEventListener('click', linkAction))
+      navLink.forEach(n => n.addEventListener('click', linkAction));
+
+      const skillsContent = document.getElementsByClassName('skills-content'),
+            skillsHeader = document.getElementsByClassName('skills-header');
+      
+      function toggleSkills(){
+          let itemClass = this.parentNode.className;
+          for(i=0; i<skillsContent.length; i++){
+              skillsContent[i].className = 'skills-content skills-close'
+          }
+          if(itemClass === 'skills-content skills-close'){
+              this.parentNode.className = 'skills-content skills-open'
+          }
+      }
+      skillsHeader.forEach(el) =>{
+          el.addEventListener('click', toggleSkills)
+      }
