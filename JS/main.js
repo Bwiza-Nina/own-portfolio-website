@@ -34,6 +34,6 @@ const navMenu = document.getElementById('nav-menu'),
               this.parentNode.className = 'skills-content skills-open'
           }
       }
-      skillsHeader.forEach(el) =>{
+      skillsHeader.forEach((el) =>{
           el.addEventListener('click', toggleSkills)
-      }
+      })
