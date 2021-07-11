@@ -54,3 +54,16 @@ const navMenu = document.getElementById('nav-menu'),
               tab.classList.add('qualification-active')
           })
       })
+
+      const modalViews = document.querySelectorAll('services-modal'),
+            modalBtns = document.querySelectorAll('services-button'),
+            modalCloses = document.querySelectorAll('services-modal-close');
+      
+      let modal = function(modalClick){
+          modalViews[modalClick].classList.add('active-modal')
+      }
+      modalBtns.forEach((modalBtn, i)=>{
+          modalBtn.addEventListener('click', ()=>{
+              modal(i)
+          })
+      })
