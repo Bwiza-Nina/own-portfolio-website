@@ -11,7 +11,7 @@
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --title-color: `hsl(var(--hue-color), 8%, 15%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
@@ -172,6 +172,90 @@
     }
     .show-menu{
         bottom: 0;
+    }
+    .home-container{
+        gap: 1rem;
+    }
+    .home-content{
+        grid-template-columns: .5fr 3fr;
+        padding-top: 3.5rem;
+        align-items: center;
+    }
+    .home-social{
+        display: grid;
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+    .home-social-icon{
+        font-size: 1.25rem;
+        color: hsl(250, 69%, 21%);
+    }
+    .home-social-icon:hover{
+        color: hsl(250, 57%, 53%);
+    }
+    .home-blob{
+        width: 200px;
+        fill: hsl(250, 69%, 21%);
+    }
+    .home-blob-img{
+        width: 170px;
+    }
+    .home-data{
+        grid-column: 1/3;
+    }
+    .home-title{
+        font-size: 2rem;
+    }
+    .home-subtiitle{
+        font-size: 1.125rem;
+        color: hsl(250, 8%, 45%);
+        font-weight: 500;
+        margin-bottom: .75rem;
+    }
+    .home-description{
+        margin-bottom: 2rem;
+    }
+    .home-scroll-button{
+        color: hsl(250, 69%, 21%);
+        transition: .3s;
+    }
+    .home-scroll-button:hover{
+        transform: translateY(.25rem);
+    }
+    .home-scroll-mouse{
+        font-size: 3rem;
+    }
+    .home-scroll-name{
+        font-size: .813rem;
+        color: hsl(250, 8%, 15%);
+        font-weight: 500;
+        margin-right: .25rem;
+    }
+    .home-scroll-arrow{
+        font-size: 1.25rem;
+    }
+    .button{
+        display: inline-block;
+        background-color: hsl(250, 8%, 15%);
+        color: #fff;
+        padding: 1rem;
+        border-radius: .5rem;
+        font-weight: 500;
+    }
+    .button:hover{
+        background-color: hsl(250, 57%, 53%);
+    }
+    .button-icon{
+        font-size: 1.25rem;
+        margin-left: .5rem;
+        transition: .3s;
+    }
+    .home-scroll{
+        display: none;
+    }
+    .button-flex{
+        display: inline-flex;
+        align-items: center;
     }
     @media only screen and (max-width: 768px){
         .nav-menu{
