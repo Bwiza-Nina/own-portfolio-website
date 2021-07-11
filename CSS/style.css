@@ -257,6 +257,37 @@
         display: inline-flex;
         align-items: center;
     }
+    .about-img{
+        width: 200px;
+        border-radius: .5rem;
+        justify-self: center;
+        align-self: center;
+    }
+    .about-description{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .about-info{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2.5rem;
+    }
+    .about-info-name{
+        font-size: .75rem;
+    }
+    .about-info-title, .about-info-name{
+        display: block;
+        text-align: center;
+    }
+    .about-info-title{
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--title-color);
+    }
+    .about-buttons{
+        display: flex;
+        justify-content: center;
+    }
     @media only screen and (max-width: 768px){
         .nav-menu{
             position: fixed;
