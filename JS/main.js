@@ -67,3 +67,10 @@ const navMenu = document.getElementById('nav-menu'),
               modal(i)
           })
       })
+      modalCloses.forEach((modalClose)=>{
+          modalClose.addEventListener('click',()=>{
+              modalViews.forEach((modalView)=>{
+                  modalView.classList.remove('active-modal')
+              })
+          })
+      })
