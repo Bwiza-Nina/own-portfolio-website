@@ -701,6 +701,9 @@
     .footer-title, .footer-subtitle, .footer-link, .footer-social{
         color: #fff;
     }
+    .active-link{
+        color: var(--first-color);
+    }
     @media only screen and (max-width: 768px){
         .nav-menu{
             position: fixed;
