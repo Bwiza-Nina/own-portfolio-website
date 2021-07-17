@@ -87,3 +87,19 @@ const navMenu = document.getElementById('nav-menu'),
           clickable: true,
         },
       });
+
+      let swiperTestimonial = new Swiper(".testimonial-container", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 48,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints:{
+            568:{
+                slidesPreview: 2,
+            }
+        }
+      });
