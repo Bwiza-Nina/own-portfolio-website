@@ -967,4 +967,39 @@ body.dark-theme{
             justify-self: row-end;
         }
     }
+    @media only screen and (min-width: 1024px){
+        .header, main, .footer-container{
+            padding: 0;
+        }
+        .home-blob{
+            width: 320px;
+        }
+        .homme-social{
+            transform: translateX(-6rem);
+        }
+        .services-container{
+            grid-template-columns: repeat(3, 238px);
+        }
+        .portfolio-content{
+            column-gap: 5rem;
+        }
+        .swiper-portfolio-icon{
+            font-size: 3.5rem;
+        }
+        .swiper-button-prev{
+            left: -3.5rem;
+        }
+        .swiper-button-next{
+            right: -3.5rem;
+        }
+        .swiper-container-horizontal>.swiper-pagination-bullet{
+            bottom: 4.5rem;
+        }
+        .contact-form{
+            width: 460px;
+        }
+        .contact-inputs{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 
