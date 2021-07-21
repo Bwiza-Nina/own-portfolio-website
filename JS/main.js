@@ -134,3 +134,39 @@ const navMenu = document.getElementById('nav-menu'),
           else scrollTop.classList.remove('show-scroll')
       }
       window.addEventListener('scroll', scrollTop);
+
+    //   DARK LIGHT THEME 
+    const themeButton = document.getElementById('theme-button')
+    const darkTheme = 'dark-theme'
+    const iconTheme =  'uil-sun'
+
+    // if user selected
+    const selectedTheme = localStorage.getItem('selected-theme')
+    const selectedIcon = localStorage.getItem('selected-icon')
+    
+    //obtain the theme by validating the dark-theme class
+    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+    const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+    //validate if the user previously chose a topic
+    if(selectedTheme){
+        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+        themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    }
+    //activate/deactivate the theme manually with the button
+    themeButton.addEventListener('click', () => {
+        //add or remove the icon theme
+        document.body.classList.toggle(darkTheme)
+        themeButton.classList.toggle(iconTheme)
+        //save the theme and the icon
+        localStorage.setItem('selected-theme', getCurrentTheme())
+        localStorage.setItem('selected-icon', getCurrentIcon())
+    })
+
+    //scroll reveal animation
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '30px',
+        duration: '2000',
+        reset: true
+    })
