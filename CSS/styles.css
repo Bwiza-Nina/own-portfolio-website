@@ -198,7 +198,7 @@ aside .sidebar a:hover {
   main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gар: 1.6геm;
+    gap: 1.6геm;
   }
   main .insights > div {
     background: var(--color-white);
@@ -354,5 +354,21 @@ main .insights .progress .number {
        margin-top: 1rem;
       }
       .right .recent-updates h2{
+          margin-bottom: 1rem;
+      }
+      .right .recent-updates .updates{
+        background: var(--color-white);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--box-shadow);
+        transition: all 300ms ease;
+      }
+      .right .recent-updates .updates:hover{
+        box-shadow: none;
+      }
+      .right .recent-updates .updates .update{
+          display: grid;
+          grid-template-columns: 1rem;
+          gap: 1em;
           margin-bottom: 1rem;
       }
