@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Admin dashboard for portfolio</title>
 </head>
 <body>
@@ -16,46 +18,61 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <img src="" alt="">
+                    <img src="../ASSETS/IMG/portfolio2.jpg" alt="LOGO">
                     <h2 class="text-muted">Bwiza <span class="danger">Nina</span></h2>
                 </div>
                 <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
                     <i class='bx bx-x'></i>
                 </div>
             </div>
             <div class="sidebar">
                 <a href="#">
-                    <i class='bx bxs-dashboard' ></i>
+                    <span class="material-icons">
+                        dashboard
+                        </span>
                     <h3>Dashboard</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bxs-chat' ></i>
+                    <span class="material-icons">
+                        chat
+                        </span>
                     <h3>Messages</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bxl-blogger' ></i>
+                    <span class="material-icons">
+                        rss_feed
+                        </span>
                     <h3>Blog</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bx-user' ></i>
+                    <span class="material-icons">
+                        subscriptions
+                        </span>
                     <h3>Subscribers</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bx-plus' ></i>
+                    <span class="material-icons">
+                        add
+                        </span>
                     <h3>Add blog</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bxs-cog'></i>
+                    <span class="material-icons">
+                        settings
+                        </span> 
                     <h3>Settings</h3>
                 </a>
                 <a href="#">
-                    <i class='bx bx-log-out' ></i>
+                    <span class="material-icons">
+                        logout
+                        </span>
                     <h3>Log out</h3>
                 </a>
                
             </div>
         </aside>
-
+<!-- MAIN SECTION -->
         <main>
             <h1>Dashoard</h1>
             <div class="date">
@@ -63,7 +80,9 @@
             </div>
             <div class="insights">
                 <div class="sales">
-                     <span class="material-icons-sharp">analytics</span>
+                    <span class="material-icons">
+                        analytics
+                        </span>
                      <div class="middle">
                           <div class="left">
                               <h3>Total Sales</h3>
@@ -74,38 +93,42 @@
                                   <circle cx='38' cy='38' r='36'></circle>
                               </svg>
                                <div class="number">
-                                   <p>81%
+                                   <p>81%</p>
                               </div>
                           </div>
                      </div>
                      <small class="text-muted">Last 24 Hours</small>
 </div>
 <!-- END OF SALES -->
-<div class="sales">
-<span class="material-icons-sharp">analytics</span>
+<div class="expenses">
+    <span class="material-icons">
+        bar_chart
+        </span>
 <div class="middle">
     <div class="left">
-        <h3>Total Sales</h3>
-        <h1>$25,024</h1>
+        <h3>Total Expenses</h3>
+        <h1>$14, 610</h1>
     </div>
     <div class="progress">
          <svg>
              <circle cx='38' cy='38' r='36'></circle>
         </svg>
         <div class="number">
-              <p>81%</p>
+              <p>62%</p>
         </div>
     </div>
 </div>
 <small class="text-muted">Last 24 Hours</small>
 </div>
-<!. END OF SALES
-<div class="sales">
-<span class="material-icons-sharp">analytics/span>
+<!-- END OF EXPENSES -->
+<div class="income">
+    <span class="material-icons">
+        stacked_line_chart
+        </span>
 <div class="middle">
     <div class="left">
-        ch3> Total Sales</h3>
-         <h1>$25,024</hl>
+        <h3> Total Income</h3>
+         <h1>$10,284</h1>
     </div>
     </div>
     <div class="progress">
@@ -113,31 +136,13 @@
         <circle cx='38' cy='38' r='36'></circle>
     </svg>
     <div class="number">
-        <p>81%</p>
+        <p>44%</p>
     </div>
-</div>
 </div>
 <small class="text-muted">Last 24 Hours</small>
 </div>
-<div class="income">
-    <span class="m stc INCOME
-    <div class="middle">
-        <div class="left">
-              <h3>Total Sales</h3>
-            <h1>$25,024</h1>
-         </div>
-        <div class="progress">
-             <svg>
-                 <circle cx='38' cy='38' r='36'></circle>
-             </svg>
-             <div class="number">
-                 <p>81%</p>
-              </div>
-         </div>
-    </div>
-    <small class="text-muted">Last 24 Hours</small>
-</div>
-</div>
+
+
 <div class="recent-orders">
     <h2>Recent Orders</h2>
     <table>
@@ -198,6 +203,7 @@
     <a href="#">Show all</a>
 </div>
 </main>
+
 <div class="right">
     <div class="top">
          <button id="menu-btn">
@@ -232,7 +238,7 @@
              <div class="updates">
                 <div class="update">
                       <div class="profile-photo">
-                           <img src="./images/profile-2.jpg"
+                           <img src="./images/profile-2.jpg">
                      </div>
                      <div class="message"
                           <p><b>Mike Tyson</b> received his order of
@@ -240,7 +246,7 @@
                            <small class="text-muted">2 Minutes Agoc/small>
                      </div>
                      <div class="updates">
-                        kdiv class="update">
+                        <div class="update">
                               <div class="profile-photo">
                                    <img src="./images/profile-2.jpg"
                              </div>
@@ -307,6 +313,7 @@
 </div>
 </div>
 </div>
+
 </body>
 
 
