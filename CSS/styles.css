@@ -318,7 +318,6 @@ main .insights .progress .number {
     display: flex;
     justify-content: end;
     gap: 2rem;
-     background: Ogray;
    }
    .right .top button {
     display: none;
@@ -329,20 +328,21 @@ main .insights .progress .number {
     justify-content: space-between;
     align-items: center;
     height: 1.6rem;
-   width: 4.2rem;
+    width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radius-1);
   }
   .right .theme-toggler span { 
     font-size: 1.2rem;
-   width: 50%;
+    width: 50%;
     height: 100%;
     display: flex;
-   align-items: center;
+    align-items: center;
+    justify-content: center;
        }
        .right .theme-toggler span.active {
         background: var(--color-primary);
-       color: Iwhite;
+        color: white;
         border-radius: var(--border-radius-1);
       }
       .right .top .profile {
@@ -354,7 +354,7 @@ main .insights .progress .number {
        margin-top: 1rem;
       }
       .right .recent-updates h2{
-          margin-bottom: 1rem;
+          margin-bottom: 0.8rem;
       }
       .right .recent-updates .updates{
         background: var(--color-white);
@@ -368,8 +368,8 @@ main .insights .progress .number {
       }
       .right .recent-updates .updates .update{
           display: grid;
-          grid-template-columns: 1rem;
-          gap: 1em;
+          grid-template-columns: 2.6rem auto;
+          gap: 1rem;
           margin-bottom: 1rem;
       }
       .right .sales-analytics {
