@@ -199,7 +199,7 @@ aside .sidebar a:hover {
   main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6геm;
+    gap: 1.6rem;
   }
   main .insights > div {
     background: var(--color-white);
@@ -241,7 +241,6 @@ aside .sidebar a:hover {
     border-radius: 50%;
   }
   main .insights svg {
-    background: Ored;
     width: 7rem;
     height: 7rem;
   }
@@ -259,7 +258,7 @@ aside .sidebar a:hover {
       stroke-dasharray: 200;
   }
   main .insights .expenses svg circle{
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 20;
     stroke-dasharray: 80;
 }
 main .insights .income svg circle{
@@ -548,7 +547,7 @@ main .insights .progress .number {
             left: 1rem;
           }
           .right .top button span{
-            font-size: 2rem ;
+            font-size: 2rem;
           }
 
 
